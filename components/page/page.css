@@ -1,3 +1,10 @@
+:root {
+    --black: #212429;
+    --title-color: var(--black);
+    --footer-content-color: var(--black);
+    --background-primary-color: #F9FAFC;
+}
+
 .page {
 
 }
@@ -17,11 +24,11 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: #212429;
+    color: var(--title-color);
 }
 
 .content {
-    background: #F9FAFC;
+    background: var(--background-primary-color);
     min-height: 100vh;
 }
 
@@ -36,7 +43,7 @@
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
-    color: #212429;
+    color: var(--title-color);
     text-align: center;
 }
 
@@ -46,6 +53,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    color: var(--footer-content-color);
     max-width: 640px;
     margin: auto;
     text-align: center;
