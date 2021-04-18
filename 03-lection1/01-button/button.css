@@ -1,1 +1,67 @@
 /* Стилизация кнопки */
+.button {
+    padding: 15px 66px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    background: transparent;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+}
+
+.button:disabled {
+    opacity: 0.5;
+}
+
+.button_primary {
+    background: var(--primary-color);
+    border: none;
+    color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_primary:hover  {
+    background: var(--primary-hover-color);
+}
+
+.button_primary:active, .button_primary:disabled {
+    background: var(--primary-color);
+}
+
+.button_secondary {
+    background: var(--secondary-color);
+    border: none;
+    color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_secondary:hover {
+    background: var(--secondary-hover-color);
+}
+
+.button_secondary:active, .button_secondary:disabled {
+    background: var(--secondary-color);
+}
+
+.button_alternate {
+    border: 1px solid var(--gray-3);
+    color: var(--gray-4);
+    transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+.button_alternate:hover {
+    border: 1px solid var(--black);
+}
+
+.button_alternate:active, .button_alternate:disabled {
+    border: 1px solid var(--gray-3);
+}

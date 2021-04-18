@@ -1,0 +1,31 @@
+.page {
+
+}
+
+.buttons {
+    padding-top: 139px;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons__title {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: #212429;
+    margin-right: 338px;
+}
+
+.buttons__grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.buttons__grid > * {
+    margin: 8px 0;
+}
