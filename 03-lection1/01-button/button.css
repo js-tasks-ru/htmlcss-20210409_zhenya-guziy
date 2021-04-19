@@ -14,12 +14,10 @@
     cursor: pointer;
 }
 
-.button:disabled {
+.button:disabled, button[disabled] {
     cursor: not-allowed;
-}
-
-.button:disabled {
     opacity: 0.5;
+    pointer-events: none
 }
 
 .button_primary {
