@@ -19,8 +19,9 @@
     --dark-blue: #2342C0;
     --dark-purple: #5028C6;
 
-    --primary-color: var(--blue);
-    --secondary-color: var(--purple);
-    --primary-hover-color: var(--dark-blue);
-    --secondary-hover-color: var(--dark-purple);
+    --button-primary: var(--blue);
+    --button-secondary: var(--purple);
+    --button-primary-hover: var(--dark-blue);
+    --button-secondary-hover: var(--dark-purple);
+    --text-primary: var(--black);
 }

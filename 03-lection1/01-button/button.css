@@ -21,33 +21,33 @@
 }
 
 .button_primary {
-    background: var(--primary-color);
+    background: var(--button-primary);
     border: none;
     color: var(--white);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_primary:hover  {
-    background: var(--primary-hover-color);
+    background: var(--button-primary-hover);
 }
 
 .button_primary:active, .button_primary:disabled {
-    background: var(--primary-color);
+    background: var(--button-primary);
 }
 
 .button_secondary {
-    background: var(--secondary-color);
+    background: var(--button-secondary);
     border: none;
     color: var(--white);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_secondary:hover {
-    background: var(--secondary-hover-color);
+    background: var(--button-secondary-hover);
 }
 
 .button_secondary:active, .button_secondary:disabled {
-    background: var(--secondary-color);
+    background: var(--button-secondary);
 }
 
 .button_alternate {
