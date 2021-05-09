@@ -1,0 +1,39 @@
+.menu {
+    color: var(--black);
+}
+
+.menu__title {
+    margin-bottom: 16px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.menu__list {
+    list-style: none;
+}
+
+.menu__item {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.menu__item_link {
+    margin-top: 30px;
+}
+
+.menu__item-link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.menu__item:hover, .menu__item-link:hover {
+    color: var(--notification);
+    cursor: pointer;
+}
