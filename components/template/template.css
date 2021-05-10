@@ -39,7 +39,7 @@ html, body {
     margin-bottom: 24px;
 }
 
-.template__histogram {
+.template__component {
     max-width: 300px;
     min-height: 157px;
 }
