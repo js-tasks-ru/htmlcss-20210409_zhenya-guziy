@@ -21,7 +21,7 @@
 }
 
 .button_primary {
-    background: var(--button-primary);
+    background: var(--primary-color);
     border: none;
     color: var(--white);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
@@ -32,11 +32,11 @@
 }
 
 .button_primary:active, .button_primary:disabled {
-    background: var(--button-primary);
+    background: var(--primary-color);
 }
 
 .button_secondary {
-    background: var(--button-secondary);
+    background: var(--secondary-color);
     border: none;
     color: var(--white);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
@@ -47,7 +47,7 @@
 }
 
 .button_secondary:active, .button_secondary:disabled {
-    background: var(--button-secondary);
+    background: var(--secondary-color);
 }
 
 .button_alternate {
