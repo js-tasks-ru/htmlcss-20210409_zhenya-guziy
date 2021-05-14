@@ -1,4 +1,5 @@
 @import './normalize.css';
+@import './reset.css';
 @import '../fonts/fonts.css';
 
 * {
@@ -24,4 +25,5 @@
     --button-primary-hover: var(--dark-blue);
     --button-secondary-hover: var(--dark-purple);
     --text-primary: var(--black);
+    --notification: #D84910;
 }

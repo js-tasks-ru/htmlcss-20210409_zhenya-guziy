@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+.header__logo-icon {
+    color: var(--black);
+    width: 110px;
+    height: 32px;
+}
+
 .header__title {
     font-family: Inter, sans-serif;
     font-style: normal;
