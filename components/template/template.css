@@ -64,7 +64,8 @@ html, body {
 .template__component {
     max-width: 350px;
     min-width: 300px;
-    min-height: 157px;
+    min-height: 250px;
+    height: 250px;
 }
 
 .template__footer {
