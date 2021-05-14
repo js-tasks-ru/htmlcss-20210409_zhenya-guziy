@@ -25,11 +25,25 @@
     cursor: pointer;
     color: var(--black);
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     outline: none;
 }
 
+/* Variant with svg */
+.accordion__summary-arrow {
+    --arrow-size: 22px;
+    color: var(--black);
+    width: var(--arrow-size);
+    height: var(--arrow-size);
+}
+
+.accordion__item[open] .accordion__summary-arrow {
+    transform: rotate(180deg);
+}
+
+/* Variant without svg
 .accordion__summary:after {
     --arrow-size: 8px;
     display: inline-block;
@@ -47,6 +61,7 @@
 .accordion__item[open] > .accordion__summary:after {
     transform: rotate(225deg);
 }
+*/
 
 .accordion__content {
     color: var(--gray-4);

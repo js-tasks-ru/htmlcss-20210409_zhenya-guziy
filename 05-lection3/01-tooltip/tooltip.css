@@ -28,6 +28,8 @@
     left: 50%;
     transform: translate(-50%, calc(-100% - var(--trigger-height) - var(--arrow-height)));
     visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .tooltip__body:after {
@@ -55,4 +57,11 @@
 
 .tooltip__trigger:hover ~ .tooltip__body {
     visibility: visible;
+    opacity: 1;
+}
+
+.tooltip__trigger-icon {
+    width: 25px;
+    height: 25px;
+    color: var(--black);
 }
