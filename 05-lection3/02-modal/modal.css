@@ -43,6 +43,12 @@
     cursor: pointer;
 }
 
+.modal__close-icon {
+    color: var(--gray-4);
+    width: 20px;
+    height: 20px;
+}
+
 .modal__title {
     font-family: Inter, sans-serif;
     font-style: normal;
