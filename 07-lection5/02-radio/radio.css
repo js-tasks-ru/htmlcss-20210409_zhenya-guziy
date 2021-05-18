@@ -1,0 +1,64 @@
+.radio__state {
+    display: flex;
+    align-items: center;
+}
+
+.radio__input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+    outline: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.radio__control {
+    width: 28px;
+    height: 28px;
+    background-color: var(--white);
+    border: 2px solid var(--gray-2);
+    border-radius: 50%;
+    position: relative;
+}
+
+.radio__control-inner {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: var(--white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio__legend {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray-4);
+    margin-left: 12px;
+}
+
+.radio__input:checked ~ .radio__state .radio__control {
+    border: 2px solid var(--primary-color);
+}
+
+.radio__input:checked ~ .radio__state .radio__control-inner {
+    background-color: var(--primary-color);
+}
+
+
+.radio__input:disabled ~ .radio__state .radio__legend {
+    cursor: not-allowed;
+    pointer-events: none;
+    color: var(--gray-2);
+}
+
+.radio__input:disabled ~ .radio__state .radio__control, .radio__input:disabled ~ .radio__state .radio__control-inner {
+    background: var(--gray-2);
+    border-color: var(--gray-2);
+}
