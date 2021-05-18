@@ -30,6 +30,7 @@
 
 .toggler__input:checked ~ .toggler__control {
     background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .toggler__input:checked ~ .toggler__control .toggler__control-inner {
