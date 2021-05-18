@@ -1,0 +1,50 @@
+.toggler__control {
+    width: 52px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--gray-2);
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggler__input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.toggler__control-inner {
+    position: absolute;
+    background: var(--gray-2);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.toggler__input:checked ~ .toggler__control {
+    background: var(--primary-color);
+}
+
+.toggler__input:checked ~ .toggler__control .toggler__control-inner {
+    left: 100%;
+    transform: translate(-100%, -50%);
+    background: var(--white);
+    border: 1px solid var(--primary-color);
+}
+
+.toggler__input:disabled ~ .toggler__control {
+    background: var(--gray-2);
+    cursor: not-allowed;
+}
+
+.toggler__input:disabled ~ .toggler__control .toggler__control-inner {
+    background: var(--gray-3);
+    border-color: var(--gray-3);
+}

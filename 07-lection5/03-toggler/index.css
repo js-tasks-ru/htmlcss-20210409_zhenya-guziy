@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldset {
+    display: grid;
+    grid-template-rows: (3, 1fr);
+    row-gap: 10px;
+}
