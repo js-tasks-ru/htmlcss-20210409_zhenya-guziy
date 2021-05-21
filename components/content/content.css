@@ -1,6 +1,5 @@
 .content {
     background: #F9FAFC;
-    padding: 68px 0 92px;
 }
 
 .content__container {
@@ -8,4 +7,5 @@
     grid-gap: 30px;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    padding-top: 68px;
 }

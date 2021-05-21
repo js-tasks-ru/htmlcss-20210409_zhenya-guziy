@@ -1,5 +1,5 @@
 .header {
-    padding: 24px 0 77px;
+    padding: 24px 0 0;
 }
 
 .header__container {
@@ -21,6 +21,13 @@
     font-size: 50px;
     line-height: 64px;
     color: var(--text-primary);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header__deliniter {
+    height: 1px;
+    background: var(--gray-2);
 }
 
 @media screen and (max-width: 768px) {

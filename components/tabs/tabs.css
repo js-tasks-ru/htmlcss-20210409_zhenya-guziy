@@ -1,0 +1,71 @@
+.tabs {
+}
+
+.tabs__input {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    outline: none;
+}
+
+.tabs__scroller {
+    display: flex;
+    padding-bottom: 13px;
+    background: var(--white);
+}
+
+.tabs__nav {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray-3);
+    position: relative;
+}
+
+.tabs__nav:hover {
+    cursor: pointer;
+    color: var(--black);
+}
+
+#all-tab:checked ~ .tabs__scroller label[for="all-tab"],
+#complex-tab:checked ~ .tabs__scroller label[for="complex-tab"],
+#simple-tab:checked ~ .tabs__scroller label[for="simple-tab"] {
+    color: var(--black);
+}
+
+#all-tab:checked ~ .tabs__scroller label[for="all-tab"]:after,
+#complex-tab:checked ~ .tabs__scroller label[for="complex-tab"]:after,
+#simple-tab:checked ~ .tabs__scroller label[for="simple-tab"]:after,
+.tabs__nav:hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    margin-top: 8px;
+    background: var(--black);
+}
+
+.tabs__nav + .tabs__nav {
+    margin-left: 40px;
+}
+
+#all-tab:checked ~ .content #complex-components,
+#all-tab:checked ~ .content #simple-components {
+    display: none;
+}
+
+
+#complex-tab:checked ~ .content #all-components,
+#complex-tab:checked ~ .content #simple-components {
+    display: none;
+}
+
+#simple-tab:checked ~ .content #all-components,
+#simple-tab:checked ~ .content #complex-components {
+    display: none;
+}
