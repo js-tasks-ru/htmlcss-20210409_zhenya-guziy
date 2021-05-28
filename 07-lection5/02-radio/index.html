@@ -4,8 +4,46 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <link rel="stylesheet" href="./index.css">
     </head>
     <body>
+        <div class="container">
+            <fieldset class="fieldset">
+                <legend class="fieldset__legend">Checkbox states</legend>
+                <label class="radio">
+                    <input type="radio" class="radio__input"/>
+                    <div class="radio__state">
+                        <div class="radio__control">                           
+                            <div class="radio__control-inner">
+                                
+                            </div>
+                        </div>
+                        <p class="radio__legend">Default</p>
+                    </div>
+                </label>
+                <label class="radio">
+                    <input type="radio" class="radio__input" checked/>
+                    <div class="radio__state">
+                        <div class="radio__control">                           
+                            <div class="radio__control-inner">
 
+                            </div>
+                        </div>
+                        <p class="radio__legend">Selected</p>
+                    </div>
+                </label>
+                <label class="radio">
+                    <input type="radio" class="radio__input" disabled/>
+                    <div class="radio__state">
+                        <div class="radio__control">                           
+                            <div class="radio__control-inner">
+
+                            </div>
+                        </div>
+                        <p class="radio__legend">Disabled</p>
+                    </div>
+                </label>
+            </fieldset>
+        </div>
     </body>
 </html>
