@@ -2,22 +2,28 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./components/tabs/tabs.css">
         <link rel="stylesheet" href="./components/header/header.css">
         <link rel="stylesheet" href="./components/nav/nav.css">
         <link rel="stylesheet" href="./components/content/content.css">
+        <link rel="stylesheet" href="./components/card/card.css">
         <link rel="stylesheet" href="./components/footer/footer.css">
         <link rel="stylesheet" href="./components/page/page.css">
+        <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+        <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
+        <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
+        <link rel="stylesheet" href="./03-lection1/01-button/button.css">
     </head>
     <body class="page">
         <header class="header">
             <div class="page__box header__container">
                 <a class="header__logo" href="#">
-                    <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect y="1" width="30" height="30" fill="#212429"/>
-                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
-                    </svg>                        
+                    <svg class="header__logo-icon">
+                        <use xlink:href="../assets/images/icons-sprite.svg#logo" />
+                    </svg>
                 </a>
                 <nav class="nav">
                     <a class="nav__item" herf="#">Components</a>
@@ -29,14 +35,175 @@
                 <h1 class="header__title">Reusable component library</h1>
             </div>
         </header>
-        <main class="content">
-            <div class="page__box content__container ">
-                <div class="content__card"></div>
-                <div class="content__card"></div>
-                <div class="content__card"></div>
-                <div class="content__card"></div>
-                <div class="content__card"></div>
-                <div class="content__card"></div>
+        <main>
+            <div class="tabs">
+                <input type="radio" id="all-tab" class="tabs__input" name="tabs" checked>
+                <input type="radio" id="complex-tab" class="tabs__input" name="tabs">
+                <input type="radio" id="simple-tab" class="tabs__input" name="tabs">
+                <div class="tabs__scroller page__box">
+                    <label for="all-tab" class="tabs__nav">All components</label>
+                    <label for="complex-tab" class="tabs__nav">Complex</label>
+                    <label for="simple-tab" class="tabs__nav">Simple</label>
+                </div>
+                <div class="header__deliniter"></div>
+                <div class="content">
+                    <div class="content__container page__box" id="all-components">
+                        <div class="card">
+                            <div class="card__header">
+                                <div class="calendar">
+                                    <div class="calendar__title">October 2019</div>
+                                    <div class="calendar__wrapper">
+                                        <div class="calendar__inner">
+                                            <div class="calendar__item calendar__item_day">Mon</div>
+                                            <div class="calendar__item calendar__item_day">Tue</div>
+                                            <div class="calendar__item calendar__item_day">Wed</div>
+                                            <div class="calendar__item calendar__item_day">Thu</div>
+                                            <div class="calendar__item calendar__item_day">Fri</div>
+                                            <div class="calendar__item calendar__item_day">Sat</div>
+                                            <div class="calendar__item calendar__item_day">Sun</div>
+                                            <div class="calendar__item"></div>
+                                            <div class="calendar__item"></div>
+                                            <div class="calendar__item"></div>
+                                            <div class="calendar__item"></div>
+                                            <div class="calendar__item">1</div>
+                                            <div class="calendar__item">2</div>
+                                            <div class="calendar__item">3</div>
+                                            <div class="calendar__item">4</div>
+                                            <div class="calendar__item">5</div>
+                                            <div class="calendar__item">6</div>
+                                            <div class="calendar__item">7</div>
+                                            <div class="calendar__item">8</div>
+                                            <div class="calendar__item">9</div>
+                                            <div class="calendar__item">10</div>
+                                            <div class="calendar__item">11</div>
+                                            <div class="calendar__item">12</div>
+                                            <div class="calendar__item">13</div>
+                                            <div class="calendar__item">14</div>
+                                            <div class="calendar__item">15</div>
+                                            <div class="calendar__item">16</div>
+                                            <div class="calendar__item">17</div>
+                                            <div class="calendar__item calendar__item_active">18</div>
+                                            <div class="calendar__item calendar__item_range-active">19</div>
+                                            <div class="calendar__item calendar__item_range-active">20</div>
+                                            <div class="calendar__item calendar__item_range-active">21</div>
+                                            <div class="calendar__item calendar__item_range-active">22</div>
+                                            <div class="calendar__item calendar__item_active">23</div>
+                                            <div class="calendar__item">24</div>
+                                            <div class="calendar__item">25</div>
+                                            <div class="calendar__item">26</div>
+                                            <div class="calendar__item">27</div>
+                                            <div class="calendar__item">28</div>
+                                            <div class="calendar__item">29</div>
+                                            <div class="calendar__item">30</div>
+                                            <div class="calendar__item">31</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__footer-title">
+                                    Calendar
+                                </div>
+                                <div class="card__footer-desc">
+                                    Component
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <div class="histogram">
+                                    <section class="histogram__header">
+                                        <span class="histogram__title">Total orders</span>
+                                        <span class="histogram__detail">View all</span>
+                                    </section>
+                                    <h4 class="histogram__total">50254</h4>
+                                    <section class="histogram__content">
+                                        <div class="histogram__column" style="height: 30%"></div>
+                                        <div class="histogram__column" style="height: 50%"></div>
+                                        <div class="histogram__column" style="height: 60%"></div>
+                                        <div class="histogram__column" style="height: 25%"></div>
+                                        <div class="histogram__column" style="height: 30%"></div>
+                                        <div class="histogram__column" style="height: 70%"></div>
+                                        <div class="histogram__column" style="height: 90%"></div>
+                                        <div class="histogram__column" style="height: 60%"></div>
+                                        <div class="histogram__column" style="height: 30%"></div>
+                                        <div class="histogram__column" style="height: 50%"></div>
+                                        <div class="histogram__column" style="height: 60%"></div>
+                                        <div class="histogram__column" style="height: 25%"></div>
+                                        <div class="histogram__column" style="height: 30%"></div>
+                                        <div class="histogram__column" style="height: 70%"></div>
+                                        <div class="histogram__column" style="height: 90%"></div>
+                                        <div class="histogram__column" style="height: 60%"></div>
+                                        <div class="histogram__column" style="height: 30%"></div>
+                                        <div class="histogram__column" style="height: 50%"></div>
+                                        <div class="histogram__column" style="height: 60%"></div>
+                                        <div class="histogram__column" style="height: 25%"></div>
+                                        <div class="histogram__column" style="height: 30%"></div>
+                                        <div class="histogram__column" style="height: 70%"></div>
+                                        <div class="histogram__column" style="height: 90%"></div>
+                                        <div class="histogram__column" style="height: 60%"></div>
+                                        <div class="histogram__column" style="height: 30%"></div>
+                                        <div class="histogram__column" style="height: 50%"></div>
+                                        <div class="histogram__column" style="height: 60%"></div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__footer-title">
+                                    Histogram
+                                </div>
+                                <div class="card__footer-desc">
+                                    Component
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <div class="skeleton">
+                                    <div class="skeleton__header">
+                                        <div class="skeleton__avatar"></div>
+                                        <div class="skeleton__info">
+                                            <div class="skeleton__title"></div>
+                                            <div class="skeleton__desc"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__content"></div>
+                                    <div class="skeleton__content"></div>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__footer-title">
+                                    Skeleton
+                                </div>
+                                <div class="card__footer-desc">
+                                    Component
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__header">
+                                <button class="button button_primary" type="button">Primary</button>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__footer-title">
+                                    Button
+                                </div>
+                                <div class="card__footer-desc">
+                                    Component
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                    <div class="page__box content__container" id="complex-components">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                    <div class="page__box content__container" id="simple-components">
+                        <div class="card">Test</div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="footer">

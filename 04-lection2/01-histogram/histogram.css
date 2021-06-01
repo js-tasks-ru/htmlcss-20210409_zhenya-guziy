@@ -53,6 +53,8 @@
     position: relative;
     flex-grow: 1;
     min-height: 50px;
+    display: flex;
+    align-items: baseline;
 }
 
 .histogram__content-inner {

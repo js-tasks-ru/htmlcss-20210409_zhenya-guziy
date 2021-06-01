@@ -26,3 +26,9 @@
 .nav__item:active, .nav__item_active {
     color: var(--black);
 }
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+}
