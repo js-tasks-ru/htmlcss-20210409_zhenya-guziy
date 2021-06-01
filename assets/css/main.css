@@ -26,4 +26,5 @@
     --button-secondary-hover: var(--dark-purple);
     --text-primary: var(--black);
     --notification: #D84910;
+    --error: #F03D3E;
 }

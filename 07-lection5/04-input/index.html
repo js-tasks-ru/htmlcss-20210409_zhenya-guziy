@@ -3,9 +3,45 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./index.css">
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-
+        <div class="container">
+            <div class="input">
+                <label class="input__label" for="text-input1">Text input</label>
+                <div class="input__control-container">
+                   <input type="text" placeholder="Placeholder"  class="input__elem" id="text-input1" /> 
+                </div>
+            </div>
+            <div class="input">
+                <label class="input__label" for="text-input2">Text input</label>
+                <div class="input__control-container">
+                    <input type="text" placeholder="Placeholder"  class="input__elem" id="text-input2" />
+                </div>
+            </div>
+            <div class="input">
+                <label class="input__label" for="text-input3">Success</label>
+                <div class="input__control-container">
+                    <input type="text" placeholder="Placeholder"  class="input__elem" id="text-input3" />
+                    <div class="input__icon input__icon_success">
+                        <svg class="input__icon-container">
+                            <use xlink:href="../../assets/images/icons-sprite.svg#success" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="input">
+                <label class="input__label" for="text-input4">Error</label>
+                <div class="input__control-container">
+                    <input type="text" placeholder="Placeholder"  class="input__elem input__elem_error" id="text-input4" />
+                    <div class="input__icon input__icon_error">
+                        <svg class="input__icon-container">
+                            <use xlink:href="../../assets/images/icons-sprite.svg#error" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

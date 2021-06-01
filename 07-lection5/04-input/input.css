@@ -1,0 +1,66 @@
+.input__label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--gray-3);
+}
+
+.input__elem {
+    padding: 17px 24px 13px;
+    outline: none;
+    border: 1px solid var(--gray-2);
+    border-radius: 8px;
+    color: var(--gray-4);
+}
+
+.input__elem, .input__elem::placeholder {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.input__elem::placeholder {
+    color: var(--gray-2);
+}
+
+.input__elem:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.input__elem_error, .input__elem_error:focus {
+    border-color: var(--error);
+}
+
+.input__control-container {
+    position: relative;
+}
+
+.input__icon-container {
+    width: 24px;
+    height: 24px;
+}
+
+.input__icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0.9em;
+    transform: translateY(-50%);
+}
+
+.input__icon_success {
+    color: var(--primary-color);
+}
+
+.input__icon_error {
+    color: var(--error);
+}
